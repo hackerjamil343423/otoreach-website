@@ -12,8 +12,8 @@ const productsMenu = [
 
 const servicesMenu = [
   { label: 'بناء نظام تشغيلي', href: '#systems' },
-  { label: 'شات بوت AI', href: '#chatbot' },
-  { label: 'صفحات هبوط', href: '#landing' },
+  { label: 'شات بوت AI', href: '/chatbot' },
+  { label: 'صفحات هبوط', href: '/landing-page' },
 ];
 
 export function Navbar() {

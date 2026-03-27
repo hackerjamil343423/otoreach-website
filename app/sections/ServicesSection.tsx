@@ -10,36 +10,42 @@ const services = [
     description: 'شبكة حصرية للمؤسسين لتبادل الخبرات، الموارد، والدعم في بناء أنظمة تشغيل قوية ونمو مستدام.',
     image: '/assets/service-community-new.png',
     cta: 'انضم للمجتمع',
+    href: '#',
   },
   {
     title: 'خدمة بناء نظام تشغيلي وأتمتة العمليات',
     description: 'نحوّل عملك اليومي إلى سيستم واضح يعمل تلقائيًا، ويدمج الذكاء الاصطناعي لتسريع النمو ورفع إنتاجية الفريق.',
     image: '/assets/service-system.png',
     cta: 'ابدأ الآن',
+    href: '#',
   },
   {
     title: 'خدمة بناء شات بوت AI',
     description: 'روبوتات ذكية تتواصل مع العملاء، تجيب على الاستفسارات، وتحرر وقت فريقك للمهام الأهم.',
     image: '/assets/service-chatbot-new.png',
     cta: 'اطلب بوتك',
+    href: '/chatbot',
   },
   {
     title: 'أداة "تلميح" لتحسين الأوامر',
     description: 'تحوّل أي تعليمات إلى أوامر دقيقة وفعّالة، لتستفيد من أدوات الذكاء الاصطناعي بأقصى قوة.',
     image: '/assets/service-telmeeh.png',
     cta: 'جرب الأداة',
+    href: '#',
   },
   {
     title: 'أداة "وكلني"',
     description: 'ربط منصاتك الإعلانية بمكان واحد مع ذكاء اصطناعي يحسّن أداء حملاتك الإعلانية ويزيد كفاءتها.',
     image: '/assets/service-wakilni.png',
     cta: 'اكتشف المزيد',
+    href: '#',
   },
   {
     title: 'خدمة بناء صفحات هبوط',
     description: 'صفحات مصممة لتحويل الزوار إلى عملاء، متكاملة مع أنظمتك التشغيلية وأدوات التسويق.',
     image: '/assets/service-landing-new.png',
     cta: 'اطلب صفحتك',
+    href: '/landing-page',
   },
 ];
 
@@ -101,7 +107,7 @@ export function ServicesSection() {
                     
                     {/* CTA */}
                     <motion.a
-                      href="#"
+                      href={service.href}
                       className="inline-flex items-center gap-2 mt-4 text-charcoal text-sm font-medium hover:text-lime transition-colors"
                       whileHover={{ x: -4 }}
                     >
