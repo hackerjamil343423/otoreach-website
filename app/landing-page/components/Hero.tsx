@@ -12,15 +12,15 @@ export default function Hero() {
     >
       {/* Animated Grid Background */}
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-[0.06]"
       >
         <div
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(212,246,87,0.12) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(212,246,87,0.12) 1px, transparent 1px),
-              radial-gradient(circle at 50% 50%, rgba(212,246,87,0.08) 0%, transparent 50%)
+              linear-gradient(rgba(17,17,17,0.8) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(17,17,17,0.8) 1px, transparent 1px),
+              radial-gradient(circle at 50% 50%, rgba(212,246,87,0.15) 0%, transparent 50%)
             `,
             backgroundSize: '50px 50px, 50px 50px, 800px 800px'
           }}
@@ -28,13 +28,13 @@ export default function Hero() {
       </div>
 
       {/* Additional Grid Overlay */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-[0.04]">
         <div
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(212,246,87,0.25) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(212,246,87,0.25) 1px, transparent 1px)
+              linear-gradient(rgba(17,17,17,0.6) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(17,17,17,0.6) 1px, transparent 1px)
             `,
             backgroundSize: '100px 100px'
           }}
@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="hero-content text-center max-w-6xl mx-auto">
           {/* Badge */}
           <div
-            className="inline-flex items-center px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-accent-lime/10 border border-accent-lime/30 text-accent-lime text-sm sm:text-base font-medium mb-8 sm:mb-12 mt-4 sm:mt-6 shadow-2xl shadow-accent-lime/20 animate-fade-in"
+            className="inline-flex items-center px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-lime/20 border border-lime/40 text-charcoal text-sm sm:text-base font-semibold mb-8 sm:mb-12 mt-4 sm:mt-6 shadow-lg shadow-lime/10 animate-fade-in"
           >
             <span className="w-3 h-3 bg-accent-lime rounded-full ml-4 animate-pulse"></span>
             عندك إطلاق منتج قريب محتاج ترفع المبيعات عندك؟
@@ -53,8 +53,8 @@ export default function Hero() {
 
           {/* Main Heading with proper RTL spacing */}
           <h1
-            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-8 sm:mb-10 leading-tight tracking-tight animate-fade-in-up"
-            style={{ lineHeight: '1.4' }}
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-8 sm:mb-10 tracking-tight animate-fade-in-up"
+            style={{ lineHeight: '1.6' }}
           >
             <span className="text-text-heading">
               توقف عن خسارة العملاء المحتملين و

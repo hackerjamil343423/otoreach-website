@@ -29,7 +29,7 @@ export default function Features() {
                   <img
                     src="/landing-page/images/problem-1.png"
                     alt="تحليل المنافسة"
-                    className="w-full h-auto object-contain"
+                    className="w-full h-auto object-contain brightness-0"
                   />
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function Features() {
               <img
                 src="/landing-page/images/problem-2.png"
                 alt="مشاكل الإطلاق"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain brightness-0"
               />
             </div>
 
@@ -119,7 +119,7 @@ export default function Features() {
               <img
                 src="/landing-page/images/problem-3.png"
                 alt="تحسين التحويلات"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain brightness-0"
               />
             </div>
 
