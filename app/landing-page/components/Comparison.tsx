@@ -18,9 +18,9 @@ export default function Comparison() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal mb-6 leading-tight">
             نحن
-            <span className="block bg-gradient-to-r from-accent-lime to-accent-lime-hover bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-lime to-lime-hover bg-clip-text text-transparent">
               مقابل الوكالات الأخرى
             </span>
           </h2>
@@ -28,47 +28,57 @@ export default function Comparison() {
 
         {/* Comparison Table */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white backdrop-blur-sm rounded-3xl border border-gray-light overflow-hidden shadow-sm">
+          <div className="bg-white rounded-3xl border border-gray-light overflow-hidden shadow-sm">
             {/* Header */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 p-4 sm:p-6 lg:p-8 border-b border-gray-light">
+            <div className="hidden sm:grid grid-cols-3 gap-4 p-4 sm:p-6 lg:p-8 border-b border-gray-light">
               <div className="text-right">
-                <h3 className="text-xl font-bold text-text-heading mb-2">الميزة</h3>
+                <span className="text-sm font-medium text-gray-body">الميزة</span>
               </div>
               <div className="text-center">
-                <div className="bg-gradient-to-r from-accent-lime to-accent-lime-hover rounded-2xl p-6">
-                  <h3 className="text-2xl font-bold text-main-background">نحن</h3>
-                  <p className="text-main-background mt-2">الخيار المحترف</p>
+                <div className="bg-lime rounded-2xl p-4 sm:p-6">
+                  <h3 className="text-xl sm:text-2xl font-bold text-charcoal">نحن</h3>
+                  <p className="text-charcoal/70 mt-1 text-sm">الخيار المحترف</p>
                 </div>
               </div>
               <div className="text-center">
-                <div className="bg-cream-dark rounded-2xl p-6 border border-gray-light">
-                  <h3 className="text-2xl font-bold text-text-heading">وكالات أخرى</h3>
-                  <p className="text-text-muted mt-2">خيارات عادية</p>
+                <div className="bg-cream-dark rounded-2xl p-4 sm:p-6 border border-gray-light">
+                  <h3 className="text-xl sm:text-2xl font-bold text-charcoal">وكالات أخرى</h3>
+                  <p className="text-gray-muted mt-1 text-sm">خيارات عادية</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Mobile Header - Stacked */}
+            <div className="sm:hidden p-4 border-b border-gray-light flex items-center justify-between gap-4">
+              <div className="flex-1 text-center bg-lime rounded-xl py-3">
+                <span className="font-bold text-charcoal">نحن</span>
+              </div>
+              <div className="flex-1 text-center bg-cream-dark rounded-xl py-3 border border-gray-light">
+                <span className="font-bold text-charcoal">وكالات أخرى</span>
               </div>
             </div>
 
             {/* Features Comparison */}
             <div className="p-4 sm:p-6 lg:p-8">
-              <div className="space-y-6">
+              <div className="space-y-0">
                 {features.map((feature, index) => (
-                  <div key={index} className="grid grid-cols-3 gap-4 items-center py-4 border-b border-gray-light last:border-b-0">
+                  <div key={index} className="grid grid-cols-[1fr_60px_60px] sm:grid-cols-3 gap-2 sm:gap-4 items-center py-4 border-b border-gray-light last:border-b-0">
                     {/* Feature Name */}
-                    <div className="text-text-heading font-medium text-lg text-right">
+                    <div className="text-charcoal font-medium text-sm sm:text-lg text-right">
                       {feature}
                     </div>
 
                     {/* نحن */}
                     <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-10 h-10 bg-accent-lime/20 rounded-full">
-                        <Check className="w-6 h-6 text-accent-lime" />
+                      <div className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-lime/20 rounded-full">
+                        <Check className="w-4 h-4 sm:w-6 sm:h-6 text-charcoal" />
                       </div>
                     </div>
 
                     {/* Other Agencies */}
                     <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-10 h-10 bg-red-600/20 rounded-full">
-                        <X className="w-6 h-6 text-red-400" />
+                      <div className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-red-100 rounded-full">
+                        <X className="w-4 h-4 sm:w-6 sm:h-6 text-red-500" />
                       </div>
                     </div>
                   </div>
@@ -77,12 +87,12 @@ export default function Comparison() {
             </div>
 
             {/* Bottom CTA */}
-            <div className="p-8 bg-gradient-to-r from-accent-lime/10 to-accent-lime-hover/10 border-t border-gray-light">
+            <div className="p-6 sm:p-8 bg-lime/5 border-t border-gray-light">
               <div className="text-center">
                 <a href="/landing-page/apply">
-                  <button className="group bg-accent-lime hover:bg-accent-lime-hover text-main-background px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
+                  <button className="group bg-lime hover:bg-lime-hover text-charcoal px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-lime/40 inline-flex items-center">
                     أختاركم
-                    <ArrowRight className="mr-4 w-6 h-6 group-hover:-translate-x-1 transition-transform" />
+                    <ArrowRight className="mr-4 w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
                   </button>
                 </a>
               </div>

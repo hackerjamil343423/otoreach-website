@@ -25,11 +25,11 @@ export default function Features() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
               {/* Right Side - Image Box */}
               <div className="order-1 lg:order-2">
-                <div className="bg-white backdrop-blur-sm rounded-3xl p-10 border border-gray-light overflow-hidden shadow-2xl animate-fade-in">
+                <div className="bg-white backdrop-blur-sm rounded-3xl p-10 border border-gray-light overflow-hidden shadow-sm animate-fade-in">
                   <img
                     src="/landing-page/images/problem-1.png"
                     alt="تحليل المنافسة"
-                    className="w-full h-auto object-contain brightness-0 contrast-150"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Features() {
 
                 <div className="pt-8 animate-fade-in-up">
                   <a href="/landing-page/apply">
-                    <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
+                    <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
                       اخرج من المنافسة خلال 7 أيام
                       <svg className="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -84,11 +84,11 @@ export default function Features() {
           {/* Right Column - Launch Problems */}
           <div className="problem-card bg-white backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-10 xl:p-12 border border-gray-light hover:border-accent-lime/40 transition-all duration-700 shadow-2xl hover:shadow-accent-lime/20 animate-fade-in-up">
             {/* Image */}
-            <div className="mb-10 bg-cream-dark rounded-3xl p-6 overflow-hidden">
+            <div className="mb-10 rounded-3xl p-6 overflow-hidden">
               <img
                 src="/landing-page/images/problem-2.png"
                 alt="مشاكل الإطلاق"
-                className="w-full h-auto object-contain brightness-0 contrast-150"
+                className="w-full h-auto object-contain"
               />
             </div>
 
@@ -106,7 +106,7 @@ export default function Features() {
             </div>
 
             <a href="/landing-page/apply">
-              <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
+              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
                 أطلق صفحتك خلال 7 أيام
               </button>
             </a>
@@ -115,11 +115,11 @@ export default function Features() {
           {/* Left Column - Conversion Optimization */}
           <div className="problem-card bg-white backdrop-blur-sm rounded-3xl p-10 lg:p-12 border border-gray-light hover:border-accent-lime/40 transition-all duration-700 shadow-2xl hover:shadow-accent-lime/20 animate-fade-in-up">
             {/* Image */}
-            <div className="mb-10 bg-cream-dark rounded-3xl p-6 overflow-hidden">
+            <div className="mb-10 rounded-3xl p-6 overflow-hidden">
               <img
                 src="/landing-page/images/problem-3.png"
                 alt="تحسين التحويلات"
-                className="w-full h-auto object-contain brightness-0 contrast-150"
+                className="w-full h-auto object-contain"
               />
             </div>
 
@@ -140,7 +140,7 @@ export default function Features() {
             </div>
 
             <a href="/landing-page/apply">
-              <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
+              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
                 احصل على صفحتك الآن
               </button>
             </a>
@@ -204,7 +204,7 @@ export default function Features() {
 
             <div className="text-center mt-16">
               <a href="/landing-page/apply">
-                <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
                   احصل على صفحتك خلال 7 أيام
                 </button>
               </a>
@@ -232,7 +232,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/1.png"
                       alt="سجل حافل بالنجاحات"
-                      className="w-32 h-32 object-contain brightness-0 contrast-125"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-3xl font-bold text-charcoal mb-6 text-center">سجل حافل بالنجاحات</h3>
@@ -245,7 +245,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/2.png"
                       alt="مهووسون بالنتائج"
-                      className="w-32 h-32 object-contain brightness-0 contrast-125"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-4 sm:mb-6">مهووسون بالنتائج</h3>
@@ -260,7 +260,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/3.png"
                       alt="السرعة"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-6">السرعة</h3>
@@ -272,7 +272,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/4.png"
                       alt="تواصل عالي المستوى"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-6">تواصل عالي المستوى</h3>
@@ -284,7 +284,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/5.png"
                       alt="كتابة إعلانية عالية التحويل"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-4">كتابة إعلانية عالية التحويل</h3>
@@ -299,7 +299,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/6.png"
                       alt="تعديلات بلا حدود"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-4">تعديلات بلا حدود</h3>
@@ -311,7 +311,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/7.png"
                       alt="تصاميم راقية"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-4">تصاميم راقية</h3>
@@ -323,7 +323,7 @@ export default function Features() {
                     <img
                       src="/landing-page/images/8.png"
                       alt="صفحات محسّنة للتحويل"
-                      className="w-32 h-32 object-contain brightness-0"
+                      className="w-32 h-32 object-contain invert"
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-text-heading mb-4">صفحات محسّنة للتحويل (CRO Optimized)</h3>
@@ -334,7 +334,7 @@ export default function Features() {
 
             <div className="text-center">
               <a href="/landing-page/apply">
-                <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
                   احجز استشارة مجانية
                 </button>
               </a>

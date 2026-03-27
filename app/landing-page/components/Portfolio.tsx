@@ -46,10 +46,10 @@ export default function Portfolio() {
 
   const getCategoryColor = (index: number) => {
     const colors = [
-      "bg-accent-lime/20 text-accent-lime border-accent-lime/30",
-      "bg-accent-lime-hover/20 text-accent-lime-hover border-accent-lime-hover/30",
-      "bg-accent-lime-subtle/50 text-accent-lime border-accent-lime/30",
-      "bg-main-gray/20 text-accent-lime border-accent-lime/30"
+      "bg-gray-100 text-charcoal border-gray-light",
+      "bg-accent-lime/10 text-charcoal border-accent-lime/30",
+      "bg-cream-dark text-charcoal border-gray-light",
+      "bg-gray-50 text-charcoal border-gray-light"
     ]
     return colors[index % colors.length]
   }

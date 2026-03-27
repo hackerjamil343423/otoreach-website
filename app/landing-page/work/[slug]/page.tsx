@@ -103,10 +103,10 @@ const portfolioItems = [
 
 const getCategoryColor = (index: number) => {
   const colors = [
-    "bg-accent-lime/20 text-accent-lime border-accent-lime/30",
-    "bg-accent-lime-hover/20 text-accent-lime-hover border-accent-lime-hover/30",
-    "bg-accent-lime-subtle/50 text-accent-lime border-accent-lime/30",
-    "bg-main-gray/20 text-accent-lime border-accent-lime/30"
+    "bg-gray-100 text-charcoal border-gray-light",
+    "bg-accent-lime/10 text-charcoal border-accent-lime/30",
+    "bg-cream-dark text-charcoal border-gray-light",
+    "bg-gray-50 text-charcoal border-gray-light"
   ]
   return colors[index % colors.length]
 }
@@ -184,7 +184,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
       <section className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <Link href="/landing-page/apply">
-            <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-full font-bold text-lg sm:text-xl lg:text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
+            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-full font-bold text-lg sm:text-xl lg:text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
               احجز استشارة مجانية الآن
               <ArrowLeft className="mr-4 w-8 h-8 group-hover:-translate-x-2 transition-transform duration-300" />
             </button>

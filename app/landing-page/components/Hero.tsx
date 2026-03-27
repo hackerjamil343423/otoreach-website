@@ -69,7 +69,7 @@ export default function Hero() {
           <div className="flex flex-col items-center justify-center gap-8 animate-fade-in-up">
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
               <a href="/landing-page/apply">
-                <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-8 sm:px-12 py-4 sm:py-5 rounded-full font-semibold text-lg sm:text-xl transition-all duration-500 hover:scale-110 shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center group w-full sm:w-auto">
+                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 py-4 sm:py-5 rounded-full font-semibold text-lg sm:text-xl transition-all duration-500 hover:scale-110 shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center group w-full sm:w-auto">
                   احجز استشارة مجانية
                   <ArrowLeft className="mr-4 w-6 h-6 group-hover:-translate-x-2 transition-transform duration-300" />
                 </button>

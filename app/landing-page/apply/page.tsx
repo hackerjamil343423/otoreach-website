@@ -100,7 +100,7 @@ export default function ApplyPage() {
           </p>
           <button
             onClick={handleWhatsAppClick}
-            className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-main-background px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center"
+            className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center"
           >
             <MessageCircle className="w-6 h-6 ml-3" />
             تواصل معنا عبر واتساب

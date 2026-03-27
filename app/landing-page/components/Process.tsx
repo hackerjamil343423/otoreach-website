@@ -83,7 +83,7 @@ export default function Process() {
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-accent-lime rounded-full border-4 border-cream transform md:-translate-x-1/2 flex items-center justify-center z-10">
-                  <span className="text-main-background text-sm font-bold">{index + 1}</span>
+                  <span className="text-charcoal text-sm font-bold">{index + 1}</span>
                 </div>
 
                 {/* Content Card */}
@@ -133,7 +133,7 @@ export default function Process() {
         {/* CTA */}
         <div className="text-center mt-16">
           <a href="/landing-page/apply">
-            <button className="bg-accent-lime hover:bg-accent-lime-hover text-main-background px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
               ابدأ عملية الـ7 أيام الآن
             </button>
           </a>

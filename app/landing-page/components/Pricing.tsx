@@ -63,23 +63,13 @@ export default function Pricing() {
 
             {/* Price */}
             <div className="text-center mb-8">
-              {/* Previous Price - Crossed Out */}
-              <div className="mb-2">
-                <span className="text-2xl text-text-muted line-through">كان 500$</span>
-              </div>
-
               <div className="flex items-center justify-center mb-4">
                 <Check className="w-8 h-8 text-accent-lime ml-4" />
-                <span className="text-5xl sm:text-6xl lg:text-7xl font-bold text-accent-lime">
-                  78$
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-bold text-charcoal">
+                  200$
                 </span>
-                <span className="text-2xl text-text-heading mr-4">فقط</span>
               </div>
 
-              {/* Savings Badge */}
-              <div className="inline-flex items-center px-4 py-2 bg-green-600/20 border border-green-600/30 rounded-full text-green-400 text-lg font-semibold mb-4">
-                وفر 422$ الآن!
-              </div>
               <p className="text-xl text-text-body-dark leading-relaxed">
                 مقابل صفحة هبوط كاملة تُبنى خصيصًا لعلامتك، تُسلم خلال
                 <span className="text-accent-lime font-bold"> 7 أيام</span>، وتشمل:
@@ -123,8 +113,8 @@ export default function Pricing() {
 
               {/* CTA Button */}
               <a href="/landing-page/apply">
-                <button className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-main-background px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
-                  احجز صفحتك الآن - 78$ فقط
+                <button className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                  احجز صفحتك الآن - 200$
                   <span className="inline-block mr-2 group-hover:translate-x-1 transition-transform duration-300">←</span>
                 </button>
               </a>
