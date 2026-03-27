@@ -45,7 +45,7 @@ export default function Pricing() {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2
             className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-4 sm:mb-6 tracking-tight"
-            style={{ lineHeight: '1.2' }}
+            style={{ lineHeight: '1.4' }}
           >
             كم يكلفك كل هذا؟
           </h2>

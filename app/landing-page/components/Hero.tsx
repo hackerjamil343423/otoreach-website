@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Main Heading with proper RTL spacing */}
           <h1
             className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-8 sm:mb-10 leading-tight tracking-tight animate-fade-in-up"
-            style={{ lineHeight: '1.2' }}
+            style={{ lineHeight: '1.4' }}
           >
             <span className="text-text-heading">
               توقف عن خسارة العملاء المحتملين و
