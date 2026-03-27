@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 20% 97%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 72 90% 65%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 48 10% 94%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 48 10% 94%;
+    --muted-foreground: 0 0% 33%;
+    --accent: 72 90% 65%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 72 90% 65%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-charcoal font-arabic antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-arabic font-bold text-charcoal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E5E5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4F657;
+}
+
+/* Hide scrollbar for logo carousel */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] .space-x-reverse > * + * {
+  --tw-space-x-reverse: 1;
+}
+
+/* Button hover glow */
+.btn-lime {
+  @apply bg-lime text-charcoal font-semibold transition-all duration-200;
+}
+.btn-lime:hover {
+  @apply bg-lime-hover shadow-lime;
+  transform: scale(1.02);
+}
+
+/* Card styles */
+.card-founder {
+  @apply bg-white border border-gray-light rounded-2xl shadow-card transition-all duration-300;
+}
+.card-founder:hover {
+  @apply shadow-card-hover border-lime/30;
+  transform: translateY(-4px);
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-20 lg:py-28;
+}
+
+/* Container */
+.container-founder {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
