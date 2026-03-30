@@ -6,7 +6,6 @@ import { Button } from './Button';
 
 export const SolutionSection: React.FC = () => {
   const features = [
-    "يفهم السؤال الحقيقي للعميل",
     "يرد بطريقة طبيعية (ما يحس انه روبوت)",
     "يتعلم من بيانات شغلك",
     "يحاول يبيع بذكاء - مو بس معلومة جافة",

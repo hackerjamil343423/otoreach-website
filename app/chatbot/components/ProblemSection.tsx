@@ -1,28 +1,29 @@
 'use client';
 
 import React from 'react';
-import { Clock, UserX, Banknote, AlertCircle, ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowLeft } from 'lucide-react';
 import { Button } from './Button';
 
 export const ProblemSection: React.FC = () => {
   const problems = [
     {
-      icon: <Clock size={24} />,
+      image: "/images/problems/hourglass.png",
       title: "الرد المتأخر يساوي عميل ضائع",
       description: "أنت الآن تحصل على رسالة من عميل حقيقي يسأل عن منتجك. لكنك مشغول. الموظف مشغول. بعد ساعة أو اثنين تجيب ترد عليه. الدقائق هذي كفيلة انك تخسره."
     },
     {
-      icon: <UserX size={24} />,
+      image: "/images/problems/low-battery.png",
       title: "الموظفين عندهم حدود",
       description: "الموظف البشري له حياة. يمرض. يطلب إجازة. ينسى يرد على رسائل معينة. أنت ما فيك تراقبه طول الوقت وسمعتك بتنهار شوي شوي."
     },
     {
-      icon: <Banknote size={24} />,
+      image: "/images/problems/coins.png",
       title: "تكلفة الموظفين تاكل أرباحك",
       description: "كل موظف خدمة عملاء راتبه بحد أدنى 3000 ريال شهرياً. وهذا بدون إجازات مرضية أو سنوية. بدون استقالات مفاجئة."
     },
     {
-      icon: <AlertCircle size={24} />,
+      image: "/images/problems/alert-bell.png",
       title: "القلق المستمر يحرمك من النوم",
       description: "كل ما تطلع من الشغل تقول: يا رب ما حصلت مشكلة؟ لو ما رد الموظف؟ ما تقدر تاخذ إجازة بهدوء. دايم بذهنك الشغل."
     }
@@ -31,7 +32,7 @@ export const ProblemSection: React.FC = () => {
   return (
     <section id="problems" className="py-24 relative">
 
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
@@ -41,22 +42,26 @@ export const ProblemSection: React.FC = () => {
           </h2>
         </div>
 
-        {/* Glass Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* 2x2 Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {problems.map((item, index) => (
             <div
               key={index}
-              className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl p-8 shadow-xl shadow-charcoal/5 hover:shadow-charcoal/10 hover:-translate-y-1 transition-all duration-300 group"
+              className="bg-white/60 backdrop-blur-md border border-white/50 rounded-3xl p-8 shadow-xl shadow-charcoal/5 hover:shadow-charcoal/10 hover:-translate-y-1 transition-all duration-300 group flex flex-col sm:flex-row items-center gap-6"
             >
-              {/* Icon Header */}
-              <div className="mb-6 flex justify-start">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-lime/15 to-white border border-lime/30 flex items-center justify-center text-charcoal shadow-sm group-hover:scale-110 transition-transform duration-300">
-                  {item.icon}
-                </div>
+              {/* Image */}
+              <div className="flex-shrink-0">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={160}
+                  height={160}
+                  className="object-contain group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
               {/* Content */}
-              <div className="text-right space-y-4">
+              <div className="text-right space-y-3 flex-1">
                 <h3 className="text-xl font-bold text-slate-900 leading-relaxed">
                   {item.title}
                 </h3>

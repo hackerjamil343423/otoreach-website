@@ -1,15 +1,8 @@
 'use client'
 
-import { ArrowLeft, Check } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 export default function FinalCTA() {
-  const benefits: string[] = [
-    "استشارة مجانية لمدة 30 دقيقة",
-    "تحليل شامل لموقعك الحالي",
-    "خطة مخصصة لتحسين التحويلات",
-    "تقدير دقيق للتكلفة والوقت"
-  ]
-
   return (
     <section className="py-20 lg:py-32 bg-charcoal">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
@@ -26,18 +19,6 @@ export default function FinalCTA() {
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed">
             احجز استشارة مجانية لمناقشة مشروعك والحصول على خطة مخصصة—خلال 7 أيام فقط.
           </p>
-
-          {/* Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-4xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-right">
-                <div className="flex items-center justify-start">
-                  <span className="text-white text-lg font-medium">{benefit}</span>
-                  <Check className="w-6 h-6 text-lime mr-4 flex-shrink-0" />
-                </div>
-              </div>
-            ))}
-          </div>
 
           {/* Urgency */}
           <div className="bg-lime/10 rounded-3xl p-8 border border-lime/30 mb-12">

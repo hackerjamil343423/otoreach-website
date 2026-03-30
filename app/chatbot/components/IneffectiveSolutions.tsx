@@ -35,8 +35,8 @@ export const IneffectiveSolutions: React.FC = () => {
           {/* Card 1: The Hiring Trap */}
           <div className="relative bg-slate-50 border border-brand-blue/20 rounded-3xl p-8 md:p-12 hover:border-brand-orange/40 hover:shadow-[0_0_40px_-10px_rgba(212,246,87,0.15)] transition-all duration-500 group">
              {/* Icon */}
-             <div className="h-16 w-16 rounded-2xl bg-brand-blue/10 border border-brand-blue/30 flex items-center justify-center text-brand-orange mb-8 shadow-inner group-hover:text-brand-orange transition-colors">
-                <Users size={32} className="drop-shadow-[0_0_15px_rgba(212,246,87,0.3)]" />
+             <div className="h-16 w-16 rounded-2xl bg-lime/15 border border-lime/30 flex items-center justify-center text-charcoal mb-8 group-hover:bg-lime/25 transition-colors">
+                <Users size={32} />
              </div>
 
              <h3 className="text-2xl font-bold text-brand-blue mb-4 group-hover:text-brand-orange transition-colors">
@@ -51,10 +51,10 @@ export const IneffectiveSolutions: React.FC = () => {
           {/* Card 2: The Dumb Bot Trap */}
           <div className="relative bg-slate-50 border border-brand-blue/20 rounded-3xl p-8 md:p-12 hover:border-brand-orange/40 hover:shadow-[0_0_40px_-10px_rgba(212,246,87,0.15)] transition-all duration-500 group">
              {/* Icon */}
-             <div className="relative h-16 w-16 rounded-2xl bg-brand-blue/10 border border-brand-blue/30 flex items-center justify-center text-brand-orange mb-8 shadow-inner group-hover:text-brand-orange transition-colors">
-                <Bot size={32} className="drop-shadow-[0_0_15px_rgba(212,246,87,0.3)]" />
-                <div className="absolute -top-2 -left-2 bg-white rounded-full p-0.5 border border-brand-orange/30">
-                  <XCircle size={20} className="text-brand-orange" />
+             <div className="relative h-16 w-16 rounded-2xl bg-lime/15 border border-lime/30 flex items-center justify-center text-charcoal mb-8 group-hover:bg-lime/25 transition-colors">
+                <Bot size={32} />
+                <div className="absolute -top-2 -left-2 bg-white rounded-full p-0.5 border border-red-200">
+                  <XCircle size={20} className="text-red-400" />
                 </div>
              </div>
 
