@@ -1,25 +1,12 @@
 "use client";
 
 import { useState } from 'react';
-import { ChevronDown, ArrowLeft, Menu } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowLeft, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/app/components/ui/sheet';
-
-const productsMenu = [
-  { label: 'مجتمع المؤسسين', href: '#community' },
-  { label: 'أداة "تلميح"', href: '#talmeeh' },
-  { label: 'أداة "وكلني"', href: '#wakilni' },
-];
-
-const servicesMenu = [
-  { label: 'بناء نظام تشغيلي', href: '#systems' },
-  { label: 'شات بوت AI', href: '/chatbot' },
-  { label: 'صفحات هبوط', href: '/landing-page' },
-];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <header
@@ -39,7 +26,7 @@ export function Navbar() {
         <div className="flex items-center justify-between" style={{ height: '68px' }}>
 
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 flex-shrink-0" dir="ltr">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0" dir="ltr">
             <span
               className="rounded-full flex-shrink-0"
               style={{ width: '34px', height: '34px', backgroundColor: '#D4F657' }}
@@ -47,126 +34,15 @@ export function Navbar() {
             <span style={{ fontSize: '15px', fontWeight: 600, color: '#111111', whiteSpace: 'nowrap' }}>
               OTO<span style={{ color: '#555555', fontWeight: 500 }}>Reach</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center" style={{ gap: '28px', marginRight: '80px' }}>
-
-            {/* Products Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => { setProductsOpen(!productsOpen); setServicesOpen(false); }}
-                className="flex items-center gap-1"
-                style={{ fontSize: '15px', fontWeight: 500, color: '#111111', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-              >
-                المنتجات
-                <ChevronDown
-                  className="w-4 h-4 transition-transform"
-                  style={{ transform: productsOpen ? 'rotate(180deg)' : 'rotate(0deg)', color: '#555555' }}
-                />
-              </button>
-              {productsOpen && (
-                <div
-                  className="absolute mt-2"
-                  style={{
-                    top: '100%',
-                    right: 0,
-                    minWidth: '180px',
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '10px',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-                    border: '1px solid #EAEAEA',
-                    overflow: 'hidden',
-                  }}
-                >
-                  {productsMenu.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      onClick={() => setProductsOpen(false)}
-                      style={{
-                        display: 'block',
-                        padding: '10px 16px',
-                        fontSize: '14px',
-                        fontWeight: 500,
-                        color: '#111111',
-                        textDecoration: 'none',
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F7F7F5')}
-                      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Services Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => { setServicesOpen(!servicesOpen); setProductsOpen(false); }}
-                className="flex items-center gap-1"
-                style={{ fontSize: '15px', fontWeight: 500, color: '#111111', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-              >
-                الخدمات
-                <ChevronDown
-                  className="w-4 h-4 transition-transform"
-                  style={{ transform: servicesOpen ? 'rotate(180deg)' : 'rotate(0deg)', color: '#555555' }}
-                />
-              </button>
-              {servicesOpen && (
-                <div
-                  className="absolute mt-2"
-                  style={{
-                    top: '100%',
-                    right: 0,
-                    minWidth: '180px',
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '10px',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-                    border: '1px solid #EAEAEA',
-                    overflow: 'hidden',
-                  }}
-                >
-                  {servicesMenu.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      onClick={() => setServicesOpen(false)}
-                      style={{
-                        display: 'block',
-                        padding: '10px 16px',
-                        fontSize: '14px',
-                        fontWeight: 500,
-                        color: '#111111',
-                        textDecoration: 'none',
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F7F7F5')}
-                      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-
             <a
-              href="#updates"
-              style={{ fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none', opacity: 0.75 }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.75')}
+              href="#services"
+              style={{ fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}
             >
-              التحديثات
-            </a>
-            <a
-              href="#blog"
-              style={{ fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none', opacity: 0.75 }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.75')}
-            >
-              المدونة
+              المنتجات والخدمات
             </a>
           </nav>
 
@@ -208,39 +84,12 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="left" className="w-[280px]" style={{ backgroundColor: '#FFFFFF' }}>
               <div className="flex flex-col gap-1 mt-8">
-                <p style={{ fontSize: '12px', fontWeight: 600, color: '#6B6B6B', padding: '4px 4px 8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  المنتجات
-                </p>
-                {productsMenu.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    style={{ display: 'block', padding: '8px 4px', fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-                <div style={{ height: '1px', backgroundColor: '#EAEAEA', margin: '10px 0' }} />
-                <p style={{ fontSize: '12px', fontWeight: 600, color: '#6B6B6B', padding: '4px 4px 8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  الخدمات
-                </p>
-                {servicesMenu.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    style={{ display: 'block', padding: '8px 4px', fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-                <div style={{ height: '1px', backgroundColor: '#EAEAEA', margin: '10px 0' }} />
-                <a href="#updates" onClick={() => setIsOpen(false)} style={{ display: 'block', padding: '8px 4px', fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}>
-                  التحديثات
-                </a>
-                <a href="#blog" onClick={() => setIsOpen(false)} style={{ display: 'block', padding: '8px 4px', fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}>
-                  المدونة
+                <a
+                  href="#services"
+                  onClick={() => setIsOpen(false)}
+                  style={{ display: 'block', padding: '8px 4px', fontSize: '15px', fontWeight: 500, color: '#111111', textDecoration: 'none' }}
+                >
+                  المنتجات والخدمات
                 </a>
                 <div style={{ height: '1px', backgroundColor: '#EAEAEA', margin: '10px 0' }} />
                 <a

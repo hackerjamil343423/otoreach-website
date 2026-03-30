@@ -1,45 +1,104 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react';
-import { staggerContainer, staggerItem } from '@/app/lib/animations';
+
+const footerLinks = {
+  services: [
+    { label: 'بناء شات بوت AI', href: '/chatbot' },
+    { label: 'صفحات هبوط', href: '/landing-page' },
+    { label: 'أداة "تلميح"', href: 'https://telmeeh.com' },
+  ],
+  company: [
+    { label: 'من نحن', href: '#' },
+    { label: 'تواصل معنا', href: '#' },
+  ],
+  legal: [
+    { label: 'سياسة الخصوصية', href: '/privacy' },
+    { label: 'شروط الاستخدام', href: '/terms' },
+  ],
+};
 
 export function Footer() {
   return (
-    <footer className="py-12 lg:py-16 bg-charcoal border-t border-white/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-        >
-          {/* Contact Info */}
-          <motion.div
-            variants={staggerItem}
-            className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pb-8"
-          >
-            <div className="flex items-center gap-2 text-gray-muted text-sm">
-              <Mail className="w-4 h-4" />
-              <span>jamil@otoreach.com</span>
-            </div>
-            <span className="text-white/20">|</span>
-            <div className="flex items-center gap-2 text-gray-muted text-sm">
-              <Phone className="w-4 h-4" />
-              <span>+905300200843</span>
-            </div>
-          </motion.div>
-
-          {/* Copyright */}
-          <motion.div
-            variants={staggerItem}
-            className="pt-8 text-center border-t border-white/10"
-          >
-            <p className="text-gray-muted text-sm">
-              © OTO REACH LLC
+    <footer className="bg-white border-t border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        {/* Top Section */}
+        <div className="flex flex-col lg:flex-row justify-between gap-12">
+          {/* Left - Logo & Contact */}
+          <div className="max-w-sm">
+            <Link href="/" className="text-2xl font-bold tracking-tight text-charcoal mb-4 block">
+              OTO<span className="text-charcoal/40">Reach</span>
+            </Link>
+            <p className="text-charcoal/50 text-sm leading-relaxed mb-6">
+              نضاعف إنتاجية الشركات عبر الأتمتة والذكاء الاصطناعي والأنظمة التشغيلية
             </p>
-          </motion.div>
-        </motion.div>
+            <div className="space-y-3">
+              <a href="mailto:jamil@otoreach.com" className="flex items-center gap-2 text-charcoal/60 text-sm hover:text-charcoal transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>jamil@otoreach.com</span>
+              </a>
+              <a href="https://wa.me/905300200843" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-charcoal/60 text-sm hover:text-charcoal transition-colors">
+                <Phone className="w-4 h-4" />
+                <span dir="ltr">+905300200843</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Right - Link Columns */}
+          <div className="flex gap-16 sm:gap-20">
+            {/* Services */}
+            <div>
+              <h4 className="font-semibold text-charcoal mb-4 text-sm">الخدمات</h4>
+              <ul className="space-y-3">
+                {footerLinks.services.map((link) => (
+                  <li key={link.label}>
+                    <a href={link.href} className="text-charcoal/50 text-sm hover:text-charcoal transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div>
+              <h4 className="font-semibold text-charcoal mb-4 text-sm">الشركة</h4>
+              <ul className="space-y-3">
+                {footerLinks.company.map((link) => (
+                  <li key={link.label}>
+                    <a href={link.href} className="text-charcoal/50 text-sm hover:text-charcoal transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="font-semibold text-charcoal mb-4 text-sm">قانوني</h4>
+              <ul className="space-y-3">
+                {footerLinks.legal.map((link) => (
+                  <li key={link.label}>
+                    <a href={link.href} className="text-charcoal/50 text-sm hover:text-charcoal transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-charcoal/40 text-sm">
+            © OTO REACH LLC
+          </p>
+        </div>
       </div>
     </footer>
   );
