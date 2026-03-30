@@ -6,6 +6,7 @@ import Process from './components/Process'
 import Pricing from './components/Pricing'
 import Comparison from './components/Comparison'
 import FinalCTA from './components/FinalCTA'
+import { Footer } from '@/app/sections/Footer'
 
 export default function LandingPageHome() {
   return (
@@ -18,6 +19,7 @@ export default function LandingPageHome() {
       <Pricing />
       <Comparison />
       <FinalCTA />
+      <Footer />
     </main>
   )
 }

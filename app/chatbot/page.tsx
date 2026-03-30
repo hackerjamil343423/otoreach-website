@@ -8,7 +8,7 @@ import { SolutionSection } from './components/SolutionSection';
 import { DeliverablesSection } from './components/DeliverablesSection';
 import { ChannelsSection } from './components/ChannelsSection';
 import { JourneySection } from './components/JourneySection';
-import { Footer } from './components/Footer';
+import { Footer } from '@/app/sections/Footer';
 
 export default function ChatbotPage() {
   return (
