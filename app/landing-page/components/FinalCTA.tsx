@@ -15,7 +15,7 @@ export default function FinalCTA() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="max-w-5xl mx-auto text-center">
           {/* Main Title */}
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 sm:mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight">
             جاهز لصفحة هبوط تحوّل الزوار
             <span className="block bg-gradient-to-r from-lime to-lime-hover bg-clip-text text-transparent">
               إلى عملاء؟
@@ -52,7 +52,7 @@ export default function FinalCTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-8">
             <a href="/landing-page/apply">
-              <button className="bg-lime hover:bg-lime-hover text-charcoal px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-full font-bold text-lg sm:text-xl lg:text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-lime/40 inline-flex items-center w-full sm:w-auto">
+              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 lg:px-16 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center w-full sm:w-auto">
                 احجز استشارة مجانية الآن
                 <ArrowLeft className="mr-4 w-8 h-8 group-hover:-translate-x-2 transition-transform duration-300" />
               </button>

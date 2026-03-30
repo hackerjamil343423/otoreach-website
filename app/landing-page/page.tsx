@@ -4,7 +4,6 @@ import Portfolio from './components/Portfolio'
 import Features from './components/Features'
 import Process from './components/Process'
 import Pricing from './components/Pricing'
-import Testimonials from './components/Testimonials'
 import Comparison from './components/Comparison'
 import FinalCTA from './components/FinalCTA'
 
@@ -17,7 +16,6 @@ export default function LandingPageHome() {
       <Features />
       <Process />
       <Pricing />
-      <Testimonials />
       <Comparison />
       <FinalCTA />
     </main>

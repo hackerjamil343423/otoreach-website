@@ -18,7 +18,7 @@ export default function Comparison() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mb-6 leading-tight">
             نحن
             <span className="block bg-gradient-to-r from-lime to-lime-hover bg-clip-text text-transparent">
               مقابل الوكالات الأخرى
@@ -90,7 +90,7 @@ export default function Comparison() {
             <div className="p-6 sm:p-8 bg-lime/5 border-t border-gray-light">
               <div className="text-center">
                 <a href="/landing-page/apply">
-                  <button className="group bg-lime hover:bg-lime-hover text-charcoal px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-lime/40 inline-flex items-center">
+                  <button className="group bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center">
                     أختاركم
                     <ArrowRight className="mr-4 w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
                   </button>

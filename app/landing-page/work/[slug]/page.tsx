@@ -184,7 +184,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
       <section className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <Link href="/landing-page/apply">
-            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-full font-bold text-lg sm:text-xl lg:text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
+            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center">
               احجز استشارة مجانية الآن
               <ArrowLeft className="mr-4 w-8 h-8 group-hover:-translate-x-2 transition-transform duration-300" />
             </button>

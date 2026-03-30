@@ -17,7 +17,7 @@ export default function Features() {
         <div className="mb-24 lg:mb-32 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-right mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-6 sm:mb-8 leading-tight animate-fade-in-up">
                 لماذا تحتاج صفحة هبوط احترافية الآن؟
               </h2>
             </div>
@@ -65,7 +65,7 @@ export default function Features() {
 
                 <div className="pt-8 animate-fade-in-up">
                   <a href="/landing-page/apply">
-                    <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center">
+                    <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center">
                       اخرج من المنافسة خلال 7 أيام
                       <svg className="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -106,7 +106,7 @@ export default function Features() {
             </div>
 
             <a href="/landing-page/apply">
-              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
+              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg w-full">
                 أطلق صفحتك خلال 7 أيام
               </button>
             </a>
@@ -140,7 +140,7 @@ export default function Features() {
             </div>
 
             <a href="/landing-page/apply">
-              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent-lime/30 w-full">
+              <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg w-full">
                 احصل على صفحتك الآن
               </button>
             </a>
@@ -151,7 +151,7 @@ export default function Features() {
         <div className="mb-24 lg:mb-32">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-text-heading mb-8 leading-tight animate-fade-in-up">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-text-heading mb-8 leading-tight animate-fade-in-up">
                 نحن نحقق نتائج لعملائنا من خلال التركيز على أربعة عناصر
               </h2>
             </div>
@@ -204,7 +204,7 @@ export default function Features() {
 
             <div className="text-center mt-16">
               <a href="/landing-page/apply">
-                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
                   احصل على صفحتك خلال 7 أيام
                 </button>
               </a>
@@ -216,7 +216,7 @@ export default function Features() {
         <div className="mb-24 lg:mb-32 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-text-heading mb-8 leading-tight animate-fade-in-up">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-text-heading mb-8 leading-tight animate-fade-in-up">
                 لماذا تختار صفحاتنا؟
               </h2>
             </div>
@@ -334,7 +334,7 @@ export default function Features() {
 
             <div className="text-center">
               <a href="/landing-page/apply">
-                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
                   احجز استشارة مجانية
                 </button>
               </a>

@@ -61,11 +61,10 @@ export default function ApplyPage() {
               <p className="text-text-body-dark mb-4">للاستفسارات السريعة أو لحجز موعد مباشرة</p>
               <button
                 onClick={handleWhatsAppClick}
-                className="group bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center"
+                className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center"
               >
                 <MessageCircle className="w-5 h-5 ml-2" />
                 تواصل الآن
-                <span className="inline-block mr-2 group-hover:translate-x-1 transition-transform duration-300">&larr;</span>
               </button>
             </div>
           </div>
@@ -100,7 +99,7 @@ export default function ApplyPage() {
           </p>
           <button
             onClick={handleWhatsAppClick}
-            className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40 inline-flex items-center"
+            className="group bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center"
           >
             <MessageCircle className="w-6 h-6 ml-3" />
             تواصل معنا عبر واتساب

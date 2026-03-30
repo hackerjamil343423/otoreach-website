@@ -67,7 +67,7 @@ export default function Portfolio() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-4 sm:mb-6 tracking-tight animate-fade-in-up"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-4 sm:mb-6 tracking-tight animate-fade-in-up"
             style={{ lineHeight: '1.4' }}
           >
             أعمالنا
@@ -142,7 +142,7 @@ export default function Portfolio() {
 
         {/* View More Button */}
         <div className="text-center animate-fade-in-up">
-          <button className="group bg-accent-lime/10 hover:bg-accent-lime/20 backdrop-blur-sm border border-accent-lime/30 hover:border-accent-lime/50 text-text-heading px-10 py-5 rounded-full font-semibold text-xl transition-all duration-500 hover:scale-110 shadow-xl hover:shadow-2xl hover:shadow-accent-lime/20 inline-flex items-center">
+          <button className="group bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center">
             عرض جميع الأعمال
             <ArrowUpLeft className="ml-4 w-6 h-6 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
           </button>

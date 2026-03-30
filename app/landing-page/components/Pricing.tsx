@@ -44,7 +44,7 @@ export default function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-4 sm:mb-6 tracking-tight"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-4 sm:mb-6 tracking-tight"
             style={{ lineHeight: '1.4' }}
           >
             كم يكلفك كل هذا؟
@@ -113,9 +113,8 @@ export default function Pricing() {
 
               {/* CTA Button */}
               <a href="/landing-page/apply">
-                <button className="group bg-gradient-to-r from-accent-lime to-accent-lime-hover hover:from-accent-lime-hover hover:to-accent-lime text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+                <button className="group bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
                   احجز صفحتك الآن - 200$
-                  <span className="inline-block mr-2 group-hover:translate-x-1 transition-transform duration-300">←</span>
                 </button>
               </a>
             </div>

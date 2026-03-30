@@ -60,7 +60,7 @@ export default function Process() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-heading mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-heading mb-6 leading-tight">
             خطواتنا في تسليم صفحة الهبوط الخاصة بك
             <span className="block bg-gradient-to-r from-accent-lime to-accent-lime-hover bg-clip-text text-transparent">
               خلال 7 أيام
@@ -133,7 +133,7 @@ export default function Process() {
         {/* CTA */}
         <div className="text-center mt-16">
           <a href="/landing-page/apply">
-            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-accent-lime/40">
+            <button className="bg-accent-lime hover:bg-accent-lime-hover text-charcoal px-12 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
               ابدأ عملية الـ7 أيام الآن
             </button>
           </a>
