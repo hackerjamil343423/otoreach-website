@@ -62,7 +62,7 @@ export function HeroSection() {
           <motion.div variants={staggerItem} className="flex justify-center pt-4">
             <motion.a
               href="#consultation"
-              className="inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-charcoal px-8 py-4 text-sm font-semibold text-cream transition-all shadow-[0_14px_30px_rgba(17,17,17,0.12)] hover:bg-charcoal-light"
+              className="inline-flex items-center gap-2 rounded-full bg-lime hover:bg-lime-hover text-charcoal px-8 py-4 text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
