@@ -61,7 +61,7 @@ export function HeroSection() {
           {/* CTA Button */}
           <motion.div variants={staggerItem} className="flex justify-center pt-4">
             <motion.a
-              href="#consultation"
+              href="/apply"
               className="inline-flex items-center gap-2 rounded-full bg-lime hover:bg-lime-hover text-charcoal px-8 py-4 text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

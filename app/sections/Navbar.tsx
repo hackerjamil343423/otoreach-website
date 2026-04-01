@@ -55,7 +55,7 @@ export function Navbar() {
               هل تريد تنمية عملك التجاري؟
             </p>
             <a
-              href="#consultation"
+              href="/apply"
               className="flex items-center gap-2"
               style={{
                 backgroundColor: '#D4F657',
@@ -93,7 +93,7 @@ export function Navbar() {
                 </a>
                 <div style={{ height: '1px', backgroundColor: '#EAEAEA', margin: '10px 0' }} />
                 <a
-                  href="#consultation"
+                  href="/apply"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2"
                   style={{

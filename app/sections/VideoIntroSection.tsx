@@ -58,7 +58,7 @@ export function VideoIntroSection() {
           {/* CTA */}
           <motion.div variants={staggerItem}>
             <motion.a
-              href="#apply"
+              href="/apply"
               className="inline-flex items-center gap-2 px-8 py-4 bg-lime rounded-full font-semibold text-sm hover:bg-lime-hover transition-all shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

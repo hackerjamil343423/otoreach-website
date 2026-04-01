@@ -38,7 +38,7 @@ export function CTASection() {
 
           <motion.div variants={staggerItem} className="flex justify-center pt-4">
             <motion.a
-              href="#consultation"
+              href="/apply"
               className="inline-flex items-center gap-2 px-8 py-4 bg-lime hover:bg-lime-hover text-charcoal rounded-full font-bold text-sm transition-all duration-300 shadow-md hover:shadow-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
