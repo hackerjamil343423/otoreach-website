@@ -134,7 +134,7 @@ export const JourneySection: React.FC = () => {
 
           {/* Final CTA */}
           <div className="mt-20 text-center">
-             <a href="https://wa.me/15558517999" target="_blank" rel="noopener noreferrer">
+             <a href="/chatbot/apply">
                <Button size="lg" className="text-xl h-16 px-16 rounded-2xl shadow-2xl shadow-brand-orange/30 bg-brand-orange hover:bg-brand-orangeHover animate-pulse transition-all hover:scale-105">
                  تواصل معنا الان
                </Button>

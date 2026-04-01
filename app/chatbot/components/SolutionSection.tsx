@@ -46,7 +46,7 @@ export const SolutionSection: React.FC = () => {
 
             {/* CTA */}
             <div className="pt-8">
-              <a href="https://wa.me/15558517999" target="_blank" rel="noopener noreferrer">
+              <a href="/chatbot/apply">
                 <Button className="bg-charcoal hover:bg-charcoal-light text-white shadow-xl shadow-charcoal/10 w-full sm:w-auto text-lg py-6 rounded-xl px-12">
                   تواصل معنا الان
                 </Button>

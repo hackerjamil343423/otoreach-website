@@ -66,9 +66,7 @@ export const Navbar: React.FC = () => {
               للشركات التي تريد التطور
             </p>
             <a
-              href="https://wa.me/15558517999"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/chatbot/apply"
               className="flex items-center gap-2"
               style={{
                 backgroundColor: '#D4F657',
@@ -83,7 +81,7 @@ export const Navbar: React.FC = () => {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C5E84A')}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4F657')}
             >
-              احجز استشارتك
+              تواصل معنا
               <ArrowLeft className="w-4 h-4" />
             </a>
           </div>
@@ -109,9 +107,7 @@ export const Navbar: React.FC = () => {
                 ))}
                 <div style={{ height: '1px', backgroundColor: '#EAEAEA', margin: '10px 0' }} />
                 <a
-                  href="https://wa.me/15558517999"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/chatbot/apply"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2"
                   style={{
@@ -125,7 +121,7 @@ export const Navbar: React.FC = () => {
                     marginTop: '8px',
                   }}
                 >
-                  احجز استشارتك
+                  تواصل معنا
                   <ArrowLeft className="w-4 h-4" />
                 </a>
               </div>

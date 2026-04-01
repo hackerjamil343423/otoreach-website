@@ -95,7 +95,7 @@ export const DeliverablesSection: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="mt-20 text-center flex flex-col items-center gap-6">
-          <a href="https://wa.me/15558517999" target="_blank" rel="noopener noreferrer">
+          <a href="/chatbot/apply">
             <Button className="bg-lime hover:bg-lime-hover text-charcoal shadow-xl shadow-lime/20 text-xl py-7 px-14 rounded-2xl transition-transform hover:-translate-y-1">
               تواصل معنا الان
             </Button>

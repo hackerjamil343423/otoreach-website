@@ -75,7 +75,7 @@ export const ProblemSection: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="flex justify-center">
-          <a href="https://wa.me/15558517999" target="_blank" rel="noopener noreferrer">
+          <a href="/chatbot/apply">
             <Button variant="ghost" className="group text-charcoal hover:text-charcoal-light text-lg font-bold gap-2 px-8 py-6 rounded-full bg-white/50 hover:bg-white transition-all border border-transparent hover:border-lime/30">
               تواصل معنا الان
               <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />

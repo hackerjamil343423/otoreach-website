@@ -47,9 +47,7 @@ export const Hero: React.FC = () => {
 
           <div className="flex w-full flex-col justify-center gap-5 pt-4 sm:w-auto sm:flex-row">
             <a
-              href="https://wa.me/15558517999"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/chatbot/apply"
               className="w-full sm:w-auto"
             >
               <Button className="h-16 w-full rounded-2xl px-12 text-xl font-bold shadow-xl shadow-lime/20 transition-all hover:-translate-y-1 hover:scale-105 hover:shadow-lime/30 sm:w-auto" size="lg">
